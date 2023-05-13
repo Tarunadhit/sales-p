@@ -1,0 +1,58 @@
+{
+  "name": "ng2-charts",
+  "version": "4.1.1",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=14.0.0",
+    "@angular/core": ">=14.0.0",
+    "@angular/cdk": ">=14.0.0",
+    "chart.js": "^3.4.0 || ^4.0.0",
+    "rxjs": "^6.5.3 || ^7.4.0"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.15",
+    "tslib": "^2.3.0"
+  },
+  "description": "Reactive, responsive, beautiful charts for Angular based on Chart.js",
+  "main": "src/public_api.ts",
+  "author": "Aviad Pineles",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valor-software/ng2-charts.git"
+  },
+  "schematics": "./schematics/collection.json",
+  "ng-add": {
+    "save": "dependencies"
+  },
+  "keywords": [
+    "chart.js",
+    "angular"
+  ],
+  "bugs": {
+    "url": "https://github.com/valor-software/ng2-charts/issues"
+  },
+  "homepage": "https://github.com/valor-software/ng2-charts#readme",
+  "module": "fesm2015/ng2-charts.mjs",
+  "es2020": "fesm2020/ng2-charts.mjs",
+  "esm2020": "esm2020/ng2-charts.mjs",
+  "fesm2020": "fesm2020/ng2-charts.mjs",
+  "fesm2015": "fesm2015/ng2-charts.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/ng2-charts.mjs",
+      "es2020": "./fesm2020/ng2-charts.mjs",
+      "es2015": "./fesm2015/ng2-charts.mjs",
+      "node": "./fesm2015/ng2-charts.mjs",
+      "default": "./fesm2020/ng2-charts.mjs"
+    }
+  },
+  "sideEffects": false
+}

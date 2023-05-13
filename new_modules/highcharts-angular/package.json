@@ -1,0 +1,49 @@
+{
+  "name": "highcharts-angular",
+  "description": "Highcharts component for Angular.",
+  "version": "3.1.2",
+  "license": "SEE LICENSE IN <LICENSE>",
+  "author": "Black Label <start@blacklabel.pl> (http://blacklabel.pl)",
+  "bugs": {
+    "url": "https://github.com/highcharts/highcharts-angular/issues"
+  },
+  "homepage": "https://github.com/highcharts/highcharts-angular#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highcharts/highcharts-angular"
+  },
+  "keywords": [
+    "highcharts",
+    "highstock",
+    "highmaps",
+    "angular"
+  ],
+  "peerDependencies": {
+    "@angular/common": ">=11.0.0",
+    "@angular/core": ">=11.0.0",
+    "highcharts": ">=9.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "module": "fesm2015/highcharts-angular.mjs",
+  "es2020": "fesm2020/highcharts-angular.mjs",
+  "esm2020": "esm2020/highcharts-angular.mjs",
+  "fesm2020": "fesm2020/highcharts-angular.mjs",
+  "fesm2015": "fesm2015/highcharts-angular.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/highcharts-angular.mjs",
+      "es2020": "./fesm2020/highcharts-angular.mjs",
+      "es2015": "./fesm2015/highcharts-angular.mjs",
+      "node": "./fesm2015/highcharts-angular.mjs",
+      "default": "./fesm2020/highcharts-angular.mjs"
+    }
+  },
+  "sideEffects": false
+}

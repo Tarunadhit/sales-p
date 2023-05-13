@@ -1,0 +1,44 @@
+{
+  "name": "angular-highcharts",
+  "version": "15.0.1",
+  "author": "Felix Itzenplitz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cebor/angular-highcharts.git"
+  },
+  "keywords": [
+    "angular",
+    "highcharts",
+    "chart",
+    "directive",
+    "component"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^15.1.1",
+    "@angular/core": "^15.1.1"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "fesm2015/angular-highcharts.mjs",
+  "es2020": "fesm2020/angular-highcharts.mjs",
+  "esm2020": "esm2020/angular-highcharts.mjs",
+  "fesm2020": "fesm2020/angular-highcharts.mjs",
+  "fesm2015": "fesm2015/angular-highcharts.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/angular-highcharts.mjs",
+      "es2020": "./fesm2020/angular-highcharts.mjs",
+      "es2015": "./fesm2015/angular-highcharts.mjs",
+      "node": "./fesm2015/angular-highcharts.mjs",
+      "default": "./fesm2020/angular-highcharts.mjs"
+    }
+  },
+  "sideEffects": false
+}

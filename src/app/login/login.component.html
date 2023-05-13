@@ -1,0 +1,47 @@
+
+<img src="https://png.pngtree.com/background/20210711/original/pngtree-finance-app-page-geometric-background-banner-picture-image_1107204.jpg" style=" opacity: 0.7; background-repeat: no-repeat; width: 100%;">
+<section class="login-block" >
+   <div class="container" style="margin-top: -890px; margin-right: 90px; padding: 3px; box-shadow: 10px 10px 10px;">
+       <div class="row ">
+        
+          <div class="col login-sec">
+              <h2 class="text-center" style="text-shadow: 2px 1px 1px rgb(20, 10, 208); ">Login Now</h2>
+              <form class="login-form" action=""#f="ngForm" novalidate (ngSubmit)="f.form.valid&&onSubmit()">
+              <div class="form-group">
+                  <label for="exampleInputEmail1" class="text-uppercase" style="font-weight: 700;">Email</label>
+                  <input type="email"  class="form-control" name="email"  id="" placeholder="email"  [(ngModel)]="formdata.email" #email="ngModel" required  >
+                  <span class="text-danger" *ngIf="this.submit&&email.errors?.['required']">
+                      Email is required.
+                  </span>
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputPassword1" class="text-uppercase" style="font-weight: 700;">Password</label>
+                  <input  class="form-control" type="password"  name="password" placeholder="password" id=""  [(ngModel)]="formdata.pass" #pass="ngModel" required >
+                  <span class="text-danger" *ngIf="this.submit&&pass.errors?.['required']">
+                      Password is required.
+                  </span>
+              </div>
+              <div class="form-group">
+                  <div  class="text-center" *ngIf="this.loading">
+                      <div class="spinner-border text-primary " role="status">
+                      <span class="sr-only">Loading...</span>
+                      </div>
+                  </div>
+                  <span class="text-danger" *ngIf="this.errorMessage" >
+                  <p [innerText]="this.errorMessage"></p>
+                  </span>
+                  <input  type="submit" class="btn btn-login float-right" style="text-shadow: 1px 1px 1px;" [disabled]="this.loading" value="Login"  (click)="submit=true">
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group" style="margin-bottom: -30px;">
+              Create new account ? Please <a  href="javascript:void(0);"  routerLink="/">Register</a>
+              </div>
+              </form>
+            
+              <br>
+
+              <br>
+          </div>
+      </div>
+  </div>
+</section>

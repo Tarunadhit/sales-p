@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="javascript:void(0);" routerLink="/" style="color: rgb(0, 0, 0); font-weight: 500;">Sales Forecast</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto"  >
+        <ng-container *ngIf="this.auth.isAuthenticated();then authenticated;else notAuthenticated">
+
+        </ng-container>
+        
+        <ng-template #notAuthenticated>
+            <li class="nav-item"><a href="javascript:void(0);" routerLink="/register" class="nav-link" style="color: aliceblue; font-weight: 500;">Register</a></li>
+            <li><a class="nav-link" href="javascript:void(0);" routerLink="/login" style="color: aliceblue; font-weight: 500;">Login</a></li>
+        </ng-template>
+        <ng-template #authenticated>
+            <li class="nav-item"><a href="javascript:void(0);" routerLink="/dashboard"class="nav-link" style="color: rgb(0, 0, 0); font-weight: 500;">Dashboard</a></li>
+            <li><a class="nav-link" href="javascript:void(0);"  (click)="logout()" style="color: rgb(0, 0, 0); font-weight: 500;"> Logout</a></li>
+        </ng-template>
+    </ul>
+
+    </div>
+</nav>

@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<section class="image-block" style="background-image: url('https://s3.amazonaws.com/mentoring.redesign/s3fs-public/sales_going_up.jpg'); background-repeat: no-repeat; background-size: 100% 90%; ">
+  <h2 class="text-center white-text" style="font-weight:bolder; font-size: 45px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <br> Upload the File</h2>
+
+  <section class ="dashboard-block">
+    <div class="container">
+      <div class="row ">
+        <div class="col login-sec">
+          <form class="form" style="align-content: center; height: 50%; width: 40%;" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+            <div class="form-group">
+              <label style="font-weight: 700; font-size: larger; padding-top: 5px; padding-left: 10px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; margin-left: 150px;" for="csvFile">CSV File</label>
+              <img src="data:image/png;base64,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" alt="CSV file image" style="display: inline-block; margin-left: 10px; height: 30px; width:40px;">
+              <input type="file" accept=".csv" class="form-control-file" id="csvFile"   (change)="onFileSelected($event)" #csvFileInput>
+            </div><br>
+            <label style="font-weight: 700; font-size: larger; padding-left: 10px; padding-top: 15px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;" for="periodicity">Periodicity:</label>
+            <select name="periodicity" style="margin-left: 10px;" id="periodicity" (change)="onPeriodicityChange($event)">
+              <option></option>
+              <option value="d">Daily</option>
+              <option value="w">Weeks</option>
+              <option value="m">Months</option>
+              <option value="y">Years</option>
+            </select><br><br>
+
+            <label style="font-weight: 700; font-size: larger; padding-left: 10px; padding-top: 10px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;" for="periods">Periods:</label>
+            <input type="number" style="width: 60px; text-align: center; margin-left: 10px;" name="periods" id="periods" (change)="onPeriodsChange($event)"><br><br>
+
+            <input type="submit" value="Predict" style="font-weight: 700; margin-left: 3%; margin-top: 1%; font-size: larger;">
+          </form>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+</section>

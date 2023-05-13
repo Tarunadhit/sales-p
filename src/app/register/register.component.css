@@ -1,0 +1,16 @@
+.register-block{
+    float:left;
+    width:100%;
+    padding-bottom: 500px;
+    padding-top: 650px;
+}
+
+.container{background:rgb(255, 255, 255); border-radius: 20px; width: 30%; height: 40%;position: relative;  margin-right: 500px; }
+.register-sec{padding: 50px 30px; position:relative;}
+.register-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #2736a9;}
+.register-sec h2:after{content:" "; width:100px; height:5px; background:#ffffff; display:block; margin-top:20px; border-radius:3px; margin-left:auto; margin-right:auto}
+.btn-login{background: #81caefeb; margin-right: 35%; color:#595555; font-weight:700; width: 100px; box-shadow: 2px 2px 2px;}
+.form-group{
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }

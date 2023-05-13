@@ -1,0 +1,36 @@
+.run {
+  background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+    
+  }
+
+.chart {
+    width: 100%;
+    max-width: 2800px;
+    box-shadow: 5px 5px 3px rgb(42, 41, 41);
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    
+  }
+  
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+
+.s{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 2px rgb(0,0,0);
+  border-radius: 4%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+}
+  

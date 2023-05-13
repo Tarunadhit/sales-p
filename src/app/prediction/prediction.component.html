@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<div class="main" style="background-color: rgb(255, 255, 255);">
+    <div class="background-image"></div>
+    <div class="run">
+        <canvas style="background-color: rgb(255, 255, 255); opacity: 98%;" baseChart class="chart"
+        type="line" 
+        [data]="chatdata">
+        </canvas>
+        <br><br>
+        <div class="s">
+            <h2>Accuracy:</h2>
+            <pre >{{R2}}</pre>
+            
+          </div>
+    </div>
+</div>

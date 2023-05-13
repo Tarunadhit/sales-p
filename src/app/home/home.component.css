@@ -1,0 +1,29 @@
+.centered {
+    position: absolute;
+    font-size: xxx-large;
+    font-weight: 650;
+    color: rgb(97, 87, 239);
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(205, 221, 236) ;
+    border-radius: 30px;
+    background-image: url('https://media.istockphoto.com/photos/abstract-blur-contemporary-office-interior-blue-background-concept-picture-id1024815722?k=6&m=1024815722&s=170667a&w=0&h=79XHZWAlgpT6i1g5zRIurGo_sRXoxgQmEt9BtgQ7u0w=');
+    box-shadow: 5px 5px 5px rgb(40, 126, 207);
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5fa0e6;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    border-color: #5fa0e6;
+    box-shadow: 2px 2px 2px;
+    border-radius: 10px;
+  }
+
+.background{
+  margin-top: 18%;
+}
